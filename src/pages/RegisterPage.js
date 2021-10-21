@@ -4,6 +4,7 @@ const RegisterPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [kitchen, setKitchen] = useState("");
 
   return (
     <>
@@ -25,6 +26,13 @@ const RegisterPage = () => {
               type="email"
               value={email}
               onChange={(text) => setEmail(text.target.value)}
+            />
+            <input
+              name="kitchen"
+              placeholder="Kitchen no."
+              type="text"
+              value={kitchen}
+              onChange={(text) => setKitchen(text.target.value)}
             />
             <input
               name="password"
