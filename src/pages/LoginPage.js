@@ -1,17 +1,18 @@
 import React, { useState } from "react";
-import "../styles/login.css";
+import { Link } from "react-router-dom";
+import "../styles/LoginPage.css";
+
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   return (
-    <>
-      <div className="login">
-        <h2> Please Login </h2>
-        <form method="POST" className="login_form">
-          <div className="login_inputs">
+    <div className="login">
+      <div className="container">
+        <div className="form-container sign-in-container">
+          <form method="POST" className="login_form">
+            <h1 className="login_title ">Sign in</h1>
             <input
-              autoFocus
               name="email"
               placeholder="Email"
               type="email"
@@ -25,13 +26,27 @@ const LoginPage = () => {
               value={password}
               onChange={(text) => setPassword(text.target.value)}
             />
+            <a href="#" className="forgot_pass">
+              Forgot your password?
+            </a>
+            <button className="login_btn">Sign In</button>
+          </form>
+        </div>
+        <div className="overlay-container">
+          <div className="overlay">
+            <div className="overlay-panel overlay-right">
+              <h1 className="login_title">Don't have an account?</h1>
+              <p className="login_desc">
+                Register and start your journey with us
+              </p>
+              <Link to="/register">
+                <button className="register_btn">Sign Up</button>
+              </Link>
+            </div>
           </div>
-
-          <button value="Login"> Login </button>
-          <button value="Register"> Register </button>
-        </form>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 
