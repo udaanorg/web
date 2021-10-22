@@ -43,10 +43,7 @@ const RegisterPage = () => {
                 value={password}
                 onChange={(text) => setPassword(text.target.value)}
               />
-              <a href="#" className="forgot_pass">
-                Forgot your password?
-              </a>
-              <button className="login_btn">register</button>
+              <button className="login_btn mt-3">register</button>
             </form>
           </div>
           <div className="reg-overlay-container">

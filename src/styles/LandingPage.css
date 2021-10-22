@@ -1,0 +1,147 @@
+.landing-page {
+  margin-top: 2rem;
+  padding: 0 150px;
+}
+.landing-corner {
+  z-index: -200;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 700px;
+}
+.hero-img {
+  position: absolute;
+  z-index: -100;
+  right: 20rem;
+  top: 5rem;
+}
+.hero-img img {
+  width: 600px;
+  height: 700px;
+}
+.landing-header {
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  left: -80px;
+}
+.logo-wrapper .logo img {
+  position: relative;
+  top: 12px;
+  width: 200px;
+  height: 200px;
+}
+.logo-wrapper .company {
+  position: relative;
+  left: -50px;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
+.container-buttons {
+  display: flex;
+  width: 35vh;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+}
+.container-buttons .btn-login {
+  padding: 0.5rem 1.8rem;
+  background: transparent;
+  border: 1px solid white;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+}
+.container-buttons .btn-signup {
+  padding: 0.5rem 1.8rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+}
+.hero {
+  grid-column: 0.1538461538;
+  grid-row: 2;
+  display: flex;
+}
+.hero .hero-info {
+  margin: 5rem 0 0 0;
+  width: 25vw;
+}
+.hero .hero-info p {
+  font-size: 1.3rem;
+}
+.hero .hero-info h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+.greyscale {
+  margin: 1rem 0 0 0;
+  color: grey;
+  font-size: 1.2rem;
+}
+.btn-join {
+  margin: 2rem 0 0 0;
+  color: white;
+  background-color: #723fec;
+  border: none;
+  outline: none;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+.what-we-do {
+  margin-top: 275px;
+  display: flex;
+  justify-content: space-between;
+}
+.what-we-do h1 {
+  font-size: 2.8rem;
+}
+.what-we-do .highlight {
+  color: #723fec;
+}
+.what-we-do .container-image {
+  width: 50%;
+  position: relative;
+}
+.what-we-do .container-image img {
+  position: absolute;
+  left: 0;
+  top: -70px;
+  left: -100px;
+  width: 700px;
+  height: 550px;
+  transform: rotateY(180deg);
+  background-size: 100px;
+}
+.what-we-do .content {
+  margin-left: 30rem;
+}
+.what-we-do .content p {
+  font-size: 1.4rem;
+}
+.content .greyscale {
+  margin: 2rem 0 0 0;
+  color: grey;
+  font-size: 1.2rem;
+}
+.content .btn-explore {
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  outline: none;
+  border: none;
+  background-color: #ea4997;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
