@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import LandingProfiles from "../components/LandingProfiles";
 import "../styles/LandingPage.css";
 
 const LandingPage = () => {
@@ -66,6 +67,7 @@ const LandingPage = () => {
             <button className="btn-explore">Explore More</button>
           </div>
         </section>
+        <LandingProfiles />
       </div>
       <Footer />
     </>
