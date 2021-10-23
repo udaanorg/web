@@ -5,7 +5,11 @@
   background-color: #111;
   width: 100vw;
 }
-
+.home_footer {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+}
 .footer-dark h3 {
   margin-top: 0;
   margin-bottom: 12px;

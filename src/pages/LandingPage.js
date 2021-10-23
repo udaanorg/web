@@ -19,7 +19,7 @@ const LandingPage = () => {
         <div className="landing-header">
           <div className="logo-wrapper">
             <div className="logo">
-              <img src={process.env.PUBLIC_URL + "/landing/LOGO.png"} alt=""/>
+              <img src={process.env.PUBLIC_URL + "/landing/LOGO.png"} alt="" />
             </div>
             <div className="company">UDAAN</div>
           </div>
@@ -38,7 +38,8 @@ const LandingPage = () => {
             <p>With UDAAN,</p>
             <h1>Maximize your kitchen's efficiency.</h1>
             <p className="greyscale">
-              We will help you understand how your kitchen can efficiently use raw materials.
+              We will help you understand how your kitchen can efficiently use
+              raw materials.
             </p>
             <Link to="/register">
               <button className="btn-join">Join UDAAN Now</button>
@@ -58,15 +59,19 @@ const LandingPage = () => {
             <h1>What we do ?</h1>
             <br />
             <p>
-              We visually illustrate your kitchen's raw material data using graphs over a period of time that will help you analyse how efficiently  it was used and reduce wastage. 
+              We visually illustrate your kitchen's raw material data using
+              graphs over a period of time that will help you analyse how
+              efficiently it was used and reduce wastage.
             </p>
             <br />
-            <button className="btn-explore">View graphs for all kitchens</button>
+            <button className="btn-explore">
+              View graphs for all kitchens
+            </button>
           </div>
         </section>
         <LandingProfiles />
       </div>
-      <Footer />
+      <Footer page="landing" />
     </>
   );
 };

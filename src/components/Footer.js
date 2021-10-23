@@ -5,10 +5,12 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 
-const Footer = () => {
+const Footer = ({ page }) => {
   return (
     <>
-      <div class="footer-dark">
+      <div
+        class={`${page === "home" ? "home_footer footer-dark" : "footer-dark"}`}
+      >
         <div class="row">
           <div class="col-sm-6 col-md-3 item">
             <h3>Services</h3>
@@ -19,7 +21,6 @@ const Footer = () => {
               <li>
                 <a href="#">Data analysis</a>
               </li>
-              
             </ul>
           </div>
           <div class="col-sm-6 col-md-3 item">

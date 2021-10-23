@@ -1,7 +1,7 @@
 .Nav {
   width: 100vw !important;
   margin: 0;
-  padding: 0px;
+  padding: 0px 40px;
   box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1) !important;
   height: 85px !important;
   z-index: 1;
