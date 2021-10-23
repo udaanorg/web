@@ -14,14 +14,12 @@ const Footer = () => {
             <h3>Services</h3>
             <ul>
               <li>
-                <a href="#">Web design</a>
+                <a href="#">Graphs</a>
               </li>
               <li>
-                <a href="#">Development</a>
+                <a href="#">Data analysis</a>
               </li>
-              <li>
-                <a href="#">Hosting</a>
-              </li>
+              
             </ul>
           </div>
           <div class="col-sm-6 col-md-3 item">
@@ -31,10 +29,10 @@ const Footer = () => {
                 <a href="#">Company</a>
               </li>
               <li>
-                <a href="#">Team</a>
+                <a href="#">What we do</a>
               </li>
               <li>
-                <a href="#">Careers</a>
+                <a href="#">Team</a>
               </li>
             </ul>
           </div>

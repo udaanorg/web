@@ -19,7 +19,7 @@ const LandingPage = () => {
         <div className="landing-header">
           <div className="logo-wrapper">
             <div className="logo">
-              <img src={process.env.PUBLIC_URL + "/landing/LOGO.png"} alt="" />
+              <img src={process.env.PUBLIC_URL + "/landing/LOGO.png"} alt=""/>
             </div>
             <div className="company">UDAAN</div>
           </div>
@@ -35,10 +35,10 @@ const LandingPage = () => {
         </div>
         <div className="hero">
           <div className="hero-info">
-            <p>With UDAAN</p>
-            <h1>Attend or Host Events you Love.</h1>
+            <p>With UDAAN,</p>
+            <h1>Maximize your kitchen's efficiency.</h1>
             <p className="greyscale">
-              The platform meant to host and attend in person & virtual events
+              We will help you understand how your kitchen can efficiently use raw materials.
             </p>
             <Link to="/register">
               <button className="btn-join">Join UDAAN Now</button>
@@ -58,13 +58,10 @@ const LandingPage = () => {
             <h1>What we do ?</h1>
             <br />
             <p>
-              We bring <span className="highlight"> organizations </span> and
-              <span className="highlight"> volunteers </span>on a single
-              platform,thus simplifying further processes to connect,track and
-              manage Events happening around!
+              We visually illustrate your kitchen's raw material data using graphs over a period of time that will help you analyse how efficiently  it was used and reduce wastage. 
             </p>
             <br />
-            <button className="btn-explore">Explore More</button>
+            <button className="btn-explore">View graphs for all kitchens</button>
           </div>
         </section>
         <LandingProfiles />

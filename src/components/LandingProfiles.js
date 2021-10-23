@@ -20,8 +20,7 @@ const LandingProfiles = () => {
                 Our Creative <span> Team</span>
               </h3>
               <p>
-                UDAAN Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Qui, ex.
+                Meet the team members that made this project possible.
               </p>
               <div class="line"></div>
             </div>
@@ -46,7 +45,7 @@ const LandingProfiles = () => {
               </div>
               <div class="single_advisor_details_info">
                 <h6>Swanand Wagh</h6>
-                <p class="designation">Founder &amp; CEO</p>
+                <p class="designation">Team leader</p>
               </div>
             </div>
           </div>
@@ -68,7 +67,7 @@ const LandingProfiles = () => {
               </div>
               <div class="single_advisor_details_info">
                 <h6>Vivek Nathani</h6>
-                <p class="designation">Founder &amp; CEO</p>
+                <p class="designation">Team member</p>
               </div>
             </div>
           </div>
@@ -90,7 +89,7 @@ const LandingProfiles = () => {
               </div>
               <div class="single_advisor_details_info">
                 <h6>Amish Singh</h6>
-                <p class="designation">UI Designer</p>
+                <p class="designation">Team member</p>
               </div>
             </div>
           </div>
@@ -112,7 +111,7 @@ const LandingProfiles = () => {
               </div>
               <div class="single_advisor_details_info">
                 <h6>Shraddha Suryawanshi</h6>
-                <p class="designation">Developer</p>
+                <p class="designation">Team member</p>
               </div>
             </div>
           </div>
@@ -134,7 +133,7 @@ const LandingProfiles = () => {
               </div>
               <div class="single_advisor_details_info">
                 <h6>Paulami Bhattacharya</h6>
-                <p class="designation">Marketing Manager</p>
+                <p class="designation">Team member</p>
               </div>
             </div>
           </div>
