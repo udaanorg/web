@@ -6,11 +6,24 @@ const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const login = (e) => {
+    e.preventDefault();
+    fetch("http://localhost:5000/api/v1/user/login", {
+      method: "POST",
+      body: {
+        email,
+        password,
+      },
+    }).then((value) => {
+      console.log(value);
+    });
+  };
+
   return (
     <div className="login">
       <div className="container">
         <div className="form-container sign-in-container">
-          <form method="POST" className="login_form">
+          <form className="login_form">
             <h1 className="login_title ">Sign in</h1>
             <input
               name="email"
@@ -29,7 +42,9 @@ const LoginPage = () => {
             <a href="#" className="forgot_pass">
               Forgot your password?
             </a>
-            <button className="login_btn">Sign In</button>
+            <button onClick={login} className="login_btn">
+              Sign In
+            </button>
           </form>
         </div>
         <div className="overlay-container">

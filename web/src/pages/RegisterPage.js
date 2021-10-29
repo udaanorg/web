@@ -8,6 +8,24 @@ const RegisterPage = () => {
   const [password, setPassword] = useState("");
   const [kitchen, setKitchen] = useState("");
 
+  const signup = (e) => {
+    e.preventDefault();
+    console.log(email, password);
+    fetch("http://localhost:5000/api/v1/user/signup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name,
+        email,
+        password,
+        kitchen,
+        dateOfBirth: "1970-01-01",
+      }),
+    }).then((value) => {
+      console.log(value);
+    });
+  };
+
   return (
     <>
       <div className="register">
@@ -43,7 +61,9 @@ const RegisterPage = () => {
                 value={password}
                 onChange={(text) => setPassword(text.target.value)}
               />
-              <button className="login_btn mt-3">register</button>
+              <button onClick={signup} className="login_btn mt-3">
+                register
+              </button>
             </form>
           </div>
           <div className="reg-overlay-container">

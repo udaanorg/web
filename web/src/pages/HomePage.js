@@ -5,6 +5,18 @@ import HomeNavbar from "../components/HomeNavbar";
 import "../styles/HomePage.css";
 
 const HomePage = () => {
+const kitchen = (e) => {
+  e.preventDefault();
+  
+  fetch("http://localhost:5000/api/v1/kitchen/", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({}),
+  }).then((value) => {
+    console.log(value);
+  });
+};
+  
   return (
     <>
       <HomeNavbar />
